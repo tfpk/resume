@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%https://www.overleaf.com/project/5b2f4ce53242434f871dab18
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{marvosym}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Task, How, Achievement
+% - For projects -> coaching, stakeholder management, PM, (delivery/time), teamwork, articulating what you're saying
+% Focus on the first word: Developed|Created -> ___, using ___ language
+% Bold the languages
+% Web Projects -> specify
+% Show collab -> number of teammates
+% Show some outcomes -> # downloads, launch, timeframe, etc. (quantify success - it's a skill)
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tom}{Kunc}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contact}
+
+
+\leftinfo{\Letter: \href{mailto:tom@tfpk.dev}{tom@tfpk.dev}}
+\leftinfo{\Mobilefone: \href{tel:+61458018875}{+61 458 018 875}}
+\leftinfo{\Mundus: \href{http://tfpk.dev}{tfpk.dev}}
+\leftinfo{Github:// \href{https://github.com/tfpk}{tfpk}}
+\leftinfo{LinkedIn://  \href{https://www.linkedin.com/in/tfpk-}{tfpk-}}
+\sectionsep
+
+\section{Education} 
+
+\subsection{University of \\ New South Wales}
+\descript{4th Year, BS in \\ Computer Science}
+\location{Feb 2018 - Current | Sydney, NSW}
+\location{WAM: 79.8}
+\location{Expected Graduation: June 2023\\ (after Hons.)}
+\sectionsep
+
+\subsection{Sydney Grammar School}
+\location{Grad. Dec 2017 | Sydney, NSW}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Experienced}
+Python \textbullet{} C \textbullet{} HTML/CSS \\
+Javascript \textbullet{} Shell \\
+\location{Familiar:}
+\LaTeX\ \textbullet{} SQL \textbullet{} Ruby [on Rails] \\
+Haskell \textbullet{} MIPS \textbullet{} Java \textbullet{} Rust
+\subsectionsep
+\subsection{Other Technologies}
+Git \textbullet{} Linux \textbullet{} Django \textbullet{} Flask \textbullet{} Vue.js \\ 
+GDB \textbullet{} Valgrind \textbullet{} Python Pandas \\
+Vim + Evil Emacs
+\subsectionsep
+\subsection{Non-Technical}
+Public Speaking \textbullet{} Debating
+\subsectionsep
+\subsection{Qualifications}
+Mental Health First Aid
+\subsectionsep
+\section{References}
+Available on request.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Coursework
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+4th Year Computer Science student, currently interested in the intersection of Teaching and Computer Science. Areas in which my degree has specialized include:
+\vspace{\topsep} 
+
+\begin{tightemize}
+\item Software Design (COMP2041: Software Construction)
+\item Informal Methods and Computing Theory (COMP3161: Theory of Programming Languages, COMP6721: Informal Methods)
+\item Operating Systems (COMP3891: Extended OS)
+\item Security (COMP6841: Security Engineering)
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work \& Volunteering}
+
+
+\runsubsection{UNSW}
+\descript{| Tutor \& Course Administrator}
+\location{June 2018 – Present | Sydney, NSW}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Tutored introductory Computer Science (UNSW's COMP1511) and datastructures/algorithms (UNSW's COMP2521) in C; both to classrooms and individuals; with an overall student satisfaction rate of 5.96/6.
+\item Administrated UNSW's introductory Computer Science course (COMP1511), including managing server infrastructure and designing and writing three assignments and five exams.
+\item Managed 80+ person drop-in sessions for new students, ensuring hundreds of students were given personalised tutoring for their software assignments.
+\item Coordinated the movement of multiple courses to online teaching during COVID, causing above-average student reviews about moving teaching online.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Kinesis}
+\descript{| Developer }
+\location{Jan 2018 - June 2020 (Part-Time) | Sydney, NSW}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Built and maintained a data-processing service in Python, which recognised over 200 different
+formats of resource usage reporting; to give companies insights into their environmental impact.
+\item Improved deployment infrastructure for a micro-services architecture, to achieve better overall 
+system visibility and control.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UNSW CSESoc}
+\descript{| Co-Director, Projects; then Grievance Officer}
+\location{Jan 2019 – Dec 2020 | Sydney, NSW}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Managed a team of over 40 students, running up-skilling sessions and managing
+infrastructure, with 2 projects now regularly used by UNSW students.
+\item Authored grievance policies and assisted in designing events (including an overnight camp), to
+ensure inclusion and participant safety.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Australian Debating Council}
+\descript{| Secretary; then President}
+\location{Mar 2019 – September 2020; September 2020 - Present | Sydney, NSW}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Co-Authored a constitution, in order to create a legally incorporated society.
+\item Organised two online debating tournaments with up to 300 participants each.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{UNSW Hopper}
+\descript{| Creator (uses Python and Javascript)}
+Created tool for use by students to manage large (60+ student) help sessions. This involved implementing python's flask over CGI; creating a front-end in Vue.js; and then deploying and managing the app over two years.
+\sectionsep
+
+\runsubsection{Valhalla \& memtools}
+\descript{| Creator (Uses Python, Bash and C)}
+Created a set of tools designed to make difficult to use debugging tools more usable by new computing students, by
+presenting a more intuitive user interface, and making error messages more clear and helpful.
+\sectionsep
+
+\end{minipage} 
+\end{document} \documentclass[]{article}
